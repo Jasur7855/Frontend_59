@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О себе</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="fio">Каграманян</h1>
+    <h2 class="fio">Юрий</h2>
+    <h3 class="fio">Максимович</h3>
+
+    <p>
+      Самый лучший и скромный преподаватель в школе актуальных профессий
+      TEHNIKUM school
+    </p>
+    <a href="https://instagram.com/maksimovich.kit" target="_blank"
+      >Мой инстаграм</a
+    >
+    <a href="https://t.me/maksimovich">Мой телеграм</a>
+
+    <img id="myPhoto" src="./photo.jpeg" alt="Крутая фотка с ЮМ" />
+
+    <h1>Моя первая форма</h1>
+    <form action="">
+      <label for="userName">
+        Ваше имя
+        <input
+          type="text"
+          name="userName"
+          id="userName"
+          placeholder="Введите ваше имя"
+        />
+      </label>
+      <label for="userSureName">
+        Ваше фамилия
+        <input type="text" name="userSureName" id="userSureName" />
+      </label>
+      <label for="user">
+        Ваш возраст
+        <input type="number" name="userAge" id="user" />
+      </label>
+      <label for="">
+        <input type="checkbox" required />
+        Я согласен учиться в школе TEHNIKUM
+      </label>
+      <input type="hidden" name="token" value="Frontend59" />
+
+      <div>
+        Ваш пол
+        <label for="">
+          <input type="radio" name="gender" value="men" />
+          М
+        </label>
+        <label for="">
+          <input type="radio" name="gender" value="women" />
+          Ж
+        </label>
+      </div>
+      <h3>Выберите курс</h3>
+      <select name="course" id="">
+        <option value="">Выберите Курс</option>
+        <option value="Frontend">Frontend</option>
+        <option value="Python">Python</option>
+        <option value="UX/UI">UX/UI</option>
+      </select>
+      <input type="submit" value="Зарегестрировать" />
+    </form>
+    <div>
+      <h3>Мой Калькулятор</h3>
+      <label for="">
+        a=
+        <input type="number" name="a" />
+      </label>
+      <label for="">
+        b=
+        <input type="number" name="b" />
+      </label>
+      <button onclick="calc()">+</button>
+      <button onclick="calc()">-</button>
+      <button onclick="calc()">*</button>
+      <button onclick="calc()">/</button>
+      <button onclick="calc()">**</button>
+      <div id="result">Результат:</div>
+    </div>
+    <h2>Мои навыки:</h2>
+
+    <ul class="skillsList">
+      <li>HTML</li>
+      <li>ReactJS</li>
+      <li>Git</li>
+      <li>CSS</li>
+      <li>JS</li>
+      <li>TypeScript</li>
+      <li>HTML</li>
+      <li>ReactJS</li>
+      <li>Git</li>
+      <li>CSS</li>
+      <li>JS</li>
+      <li>TypeScript</li>
+      <li>HTML</li>
+      <li>ReactJS</li>
+      <li>Git</li>
+      <li>CSS</li>
+      <li>JS</li>
+      <li>TypeScript</li>
+    </ul>
+
+
+
+
+
+
+
+    <div class="calc">
+      <h2>Калькулятор площади прямоугольника</h2>
+      <label for="">
+        a=
+        <input type="text">
+      </label>
+
+      <label for="">
+        b=
+        <input type="text">
+      </label>
+      <button>Посчитать</button>
+    </div>
+
+
+    <div class="courseSale">
+      <h2>Калькулятор стоимости обучения </h2>
+      <label for="">
+        Курс:
+        <select name="" id="courseName" oninput="courseSale()">
+          <option value="none">Выберите курс</option>
+          <option value="py">Python</option>
+          <option value="fr">Frontend</option>
+          <option value="ux">UX/UI</option>
+        </select>
+        <label id="procent" for="">
+          Скидка:
+          <input type="range" min="0" max="50" step="5" value="0" 
+          oninput="courseSale()" id="discountRange">
+          <span id="discountValue">0%</span>
+        </label>
+        <label for="">
+          Сумма:
+          <input type="text" id="sale" readonly>
+        </label>
+      </label>
+    </div>
+
+
+    <div class="registration">
+      <h2>Оставить заявку</h2>
+      <label for="">
+        Имя:
+        <input type="text">
+      </label>
+      <label for="">
+        Страна:
+        <select name="" id="country">
+          <option value="uz">Узбекистан</option>
+          <option value="kz">Казахстан</option>
+          <option value="us">Америка</option>
+        </select>
+      </label>
+      <label for="">
+        Телефон:
+        <input type="number">
+      </label>
+      <label for="">
+        <input type="checkbox" required>
+        Подтвердите обработку данных
+      </label>
+      <button disabled> Отправить</button>
+    </div>
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+  </body>
+</html>
